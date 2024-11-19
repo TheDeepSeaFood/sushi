@@ -19,13 +19,21 @@
             font-size: 60px !important;
         }
 
+        .text-golden {
+            color: goldenrod !important;
+        }
+
         #secondary-heading {
-            font-size: 20px !important;
+            font-size: 60px !important;
             color: goldenrod !important;
         }
 
         body {
             background-image: url(./images/background.jpg);
+        }
+
+        #womans_hand {
+            margin-right: unset !important;
         }
 
         @media (max-width: 768px) {
@@ -46,33 +54,43 @@
 
 <body>
     <main>
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6">
-                <img src="./images/womens_hand.png" alt="Womans Hand Holding Sushi" class="d-block mx-lg-auto img-fluid"
-                    width="700" height="500" loading="lazy">
-            </div>
-            <div class="col-lg-6">
-                <h2 id="primary-heading" class="display-3 fw-bold lh-1">CRAVING FRESH AND HEALTHY
-                    ?</h2>
-                <p class="lead">Dive into sushi and poke bowls packed with flavour and nutrients!</p>
+        <div class="container-fluid">
+            <div class="row flex-lg-row-reverse align-items-center">
+                <div class="col-10 col-sm-8 col-lg-6 text-end mx-0 p-0">
+                    <img id="womans_hand" src="./images/womens_hand.png" alt="Womans Hand Holding Sushi"
+                        class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <div class="ms-5">
+                        <h2 id="primary-heading" class="display-3 fw-bold lh-1 me-2">CRAVING <span
+                                class="text-golden">FRESH</span>AND <span class="text-golden">HEALTHY</span>
+                            ?</h2>
+                        <p class="lead">Dive into sushi and poke bowls packed with flavour and nutrients!</p>
+                        <img id="womans_hand" src="./images/oceano_logo_gold.png" alt="Oceano-Logo-Gold"
+                            class="d-block mx-lg-auto img-fluid" width="600" height="400" loading="lazy">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container my-5">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center shadow-lg">
-                <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                    <h1 id="secondary-heading" class="display-4 fw-bold lh-1 text-body-emphasis">SUSHI
-                        LOVERS,<br>INDULGE IN THE BEST!
-                    </h1>
-                    <p class="lead">PREMIUM ASSORTED SUSHI <br>BOX AND FRESH POKE BOWLS</p>
-                    <p>WE OFFER</p>
-                    <ul>
-                        <li>INDIVIDUAL ORDERS</li>
-                        <li>EVENT CATERING SERVICES</li>
-                    </ul>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-10 col-sm-8 col-lg-7 text-end mx-0 p-0">
+                    <img id="womans_hand" src="./images/sushi_box.png" alt="Womans Hand Holding Sushi"
+                        class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
                 </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                    <!-- <img class="rounded-lg-3" src="bootstrap-docs.png" alt="" width="720"> -->
+                <div class="col-lg-5">
+                    <div class="ms-5">
+                        <h1 id="secondary-heading" class="display-4 fw-bold lh-1 text-body-emphasis">SUSHI
+                            LOVERS,<br>INDULGE IN THE BEST!
+                        </h1>
+                        <p class="fs-3">PREMIUM ASSORTED SUSHI <br>BOX AND FRESH POKE BOWLS</p>
+                        <p class="fs-4">WE OFFER</p>
+                        <ul class="fs-5">
+                            <li>INDIVIDUAL ORDERS</li>
+                            <li>EVENT CATERING SERVICES</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
